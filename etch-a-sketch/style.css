@@ -1,0 +1,27 @@
+.container {
+  height: 640px;
+  width: 640px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#reset {
+	font-size: 24px;
+}
+
+.square.selected {
+  background-color: black;
+}
+
+.square {
+  background-color: lightgray;
+  box-sizing: border-box; /* Borders counts towards width and height */
+  border: solid 1px black;
+}
