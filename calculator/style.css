@@ -1,0 +1,30 @@
+#calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 600px;
+  background-color: lightgreen;
+}
+
+#display {
+  font-family: monospace;
+  width: 400px;
+  height: 100px;
+  flex-grow: 1;
+  font-size: 32px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#buttons {
+  display: flex;
+  flex-grow: 2;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+button {
+  width: 100px;
+}
