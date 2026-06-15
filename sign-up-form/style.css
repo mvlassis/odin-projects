@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --buton-color: white;
+  --button-bg-color: #596D48;
+  --label-color: dimgray;
+  --label-font-size: 14px;
+  --section-bg-color: whitesmoke;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  color: var(--button-color, white);
+  background-color: var(--button-bg-color, green);
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px black;
+}
+
+label {
+  display: block;
+  color: var(--label-color);
+  font-size: var(--label-font-size);
+}
+
+input:user-invalid {
+  border-color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.field {
+  display: block;
+  padding: 10px;
+}
+
+.section {
+  background-color: var(--section-bg-color, white);
+  margin: 30px 0px;
+}
+
+#left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.card-body {
+  position: absolute;
+  text-align: center;
+  top: 10rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  width: 100%;
+  padding: 5px;
+}
+
+#main {
+  flex: 2;
+}
